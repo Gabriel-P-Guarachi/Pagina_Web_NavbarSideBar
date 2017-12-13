@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Ejercicio con Login</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- <link rel="stylesheet" href="css/paper.css"> -->
+	<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+
+	<header class="my-header">
+		<nav class="container navbar navbar-static-top">
+			<div class="navbar-header">
+				<!-- Texto principal y contendra dos botones -->
+
+				<div href="#" class="my-logo">
+					<!-- Boton de sidebar -->
+					<div class="pull-left">
+						<a class="hamburger">
+							<span class="sr-only">Barra de navegacion</span>
+							<span class="glyphicon glyphicon-th-list"></span>
+						</a>
+					</div>
+
+					<span style="color: #fff;"><b>Plus</b>Sis</span>
+					<!-- Boton de datos del cliete -->
+					<div class="pull-right">
+						<a class="navbar-toggle collapsed btnbarra" data-toggle="collapse" data-target="#barra-menu">
+							<span class="sr-only">Barra de navegacion</span>
+							<span class="glyphicon glyphicon-option-vertical"></span>
+						</a>
+					</div>
+				</div>
+
+				<div class="my-div-right">
+					<div class="navbar-collapse  collapse" id="barra-menu">
+						<ul class="nav navbar-nav my-right-ul">
+							<li>
+								<a href="#" class="mytool" data-toggle="tooltip" data-placement="bottom" data-original-title="Inicio">
+									<span class="glyphicon glyphicon-home"></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="mytool" data-toggle="tooltip" data-placement="bottom" data-original-title="Servicios">
+									<span class="glyphicon glyphicon-wrench"></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="mytool" data-toggle="tooltip" data-placement="bottom" data-original-title="Contactos">
+									<span class="glyphicon glyphicon-earphone"></span>
+								</a>
+							</li>
+
+							<li class="dropdown messages-menu">
+								<a href="#" class="dropdown-toggle mytool" data-toggle="tooltip" data-placement="bottom" data-original-title="Notificaciones">
+									<span class="glyphicon glyphicon-envelope"></span>
+									<span class="label label-default">4</span>
+								</a>
+							</li>
+
+							<li class="dropdown user-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<img src="images/img_33.jpg" alt="" class="user-image">
+									<span class="hidden-xs">Usuario IMG</span>
+								</a>
+								<!-- Lista que aparece al desplegar -->
+								<ul class="dropdown-menu">
+									
+									<li class="my-user-header">
+										<img src="images/img_33.jpg" alt="" class="img-circle">
+										<p>
+											Gabriel Perez - Web Developer
+											<small>Julio 2017</small>
+										</p>
+									</li>
+									
+									<li class="my-user-footer">
+										<div class="pull-left">
+											<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-user">Perfil</span></a>
+										</div>
+										<div class="pull-right">
+											<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-off">Salir</span></a>
+										</div>
+									</li>
+
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			
+
+		</nav>
+	</header>
+<!-- wrper es un contenedo toggled es la propiedad que oculta o muestra -->
+	<div id="wrapper" class="toggled">
+		<!-- SideBar -->
+		<div class="navbar navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+			<ul class="nav sidebar-nav">
+			<!-- brand es cada li encabezado-->
+				<li class="sidebar-brand">
+					<a href="#">
+						Sitema
+					</a>
+				</li>
+				<!-- lista de items -->
+				<li class="my-li-nav">
+					<a href="#">Configuracion</a>
+				</li>
+				<li class="dropdown my-li-nav">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuarios <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class="dropdown-header">Opciones de Usuario</li>
+						<li class="my-li-nav"><a href="#">Agregar</a></li>
+						<li class="my-li-nav"><a href="#">Modificar</a></li>
+						<li class="my-li-nav"><a href="#">Eliminar</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+		
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/myscript.js"></script>
+	
+</body>
+</html>
